@@ -16,7 +16,7 @@ tags:
 
 主要参考了这一篇[Mac OS X 上搭建 Hadoop 开发环境指南-知乎专栏](https://zhuanlan.zhihu.com/p/33117305)，由于我的环境都已经安装完成了，所以下面只简单记录一下Hadoop的启动命令。
 
-#### 1.启动NameNodegi
+#### 1.启动NameNode
 ```shell
 hadoop namenode -format
 ```
@@ -62,7 +62,6 @@ hadoop fs -put ~/test.txt /search
 ./stop-all.sh
 ```
 * 然后我们需要留意执行命令 hadoop namenode -format 时终端上输出的信息，其中一般有这样两条：
-
 ```shell
 2019-12-20 10:46:50,702 INFO common.Util: Assuming 'file' scheme for path /Users/ruiyu/hadoop-3.2.1/datanode in configuration.
 2019-12-20 10:46:50,703 INFO common.Util: Assuming 'file' scheme for path /Users/ruiyu/hadoop-3.2.1/datanode in configuration.
